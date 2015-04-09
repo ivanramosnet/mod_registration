@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="default"
+		label="MOD_REGISTRATION_DEFAULT_LABEL"
+	>
+
+		<field name="spacer" type="spacer" class="text"
+				label="MOD_REGISTRATION_REQUIRED"
+			/>
+
+		<field name="name" type="text"
+			description="MOD_REGISTRATION_NAME_DESC"
+			filter="string"
+			label="MOD_REGISTRATION_NAME_LABEL"
+			required="true"
+			size="30"
+		/>
+
+		<field name="username" type="text"
+			class="validate-username"
+			description="MOD_REGISTRATION_DESIRED_USERNAME"
+			filter="username"
+			label="MOD_REGISTRATION_USERNAME_LABEL"
+			message="MOD_REGISTRATION_USERNAME_MESSAGE"
+			required="true"
+			size="30"
+			validate="username"
+		/>
+
+		<field name="password1" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="MOD_REGISTRATION_DESIRED_PASSWORD"
+			field="password1"
+			filter="raw"
+			label="MOD_REGISTRATION_PROFILE_PASSWORD1_LABEL"
+			size="30"
+			validate="password"
+			required="true"
+		/>
+
+		<field name="password2" type="password"
+			autocomplete="off"
+			class="validate-password"
+			description="MOD_REGISTRATION_PROFILE_PASSWORD2_DESC"
+			field="password1"
+			filter="raw"
+			label="MOD_REGISTRATION_PROFILE_PASSWORD2_LABEL"
+			message="MOD_REGISTRATION_PROFILE_PASSWORD1_MESSAGE"
+			size="30"
+			validate="equals"
+			required="true"
+		/>
+
+		<field name="email1" type="email"
+			description="MOD_REGISTRATION_EMAIL1_DESC"
+			field="id"
+			filter="string"
+			label="MOD_REGISTRATION_EMAIL1_LABEL"
+			message="MOD_REGISTRATION_EMAIL1_MESSAGE"
+			required="true"
+			size="30"
+			unique="true"
+			validate="email"
+		/>
+
+		<field name="email2" type="email"
+			description="MOD_REGISTRATION_EMAIL2_DESC"
+			field="email1"
+			filter="string"
+			label="MOD_REGISTRATION_EMAIL2_LABEL"
+			message="MOD_REGISTRATION_EMAIL2_MESSAGE"
+			required="true"
+			size="30"
+			validate="equals"
+		/>
+
+		<field
+			name="captcha"
+			type="captcha"
+			label="MOD_REGISTRATION_CAPTCHA_LABEL"
+			description="MOD_REGISTRATION_CAPTCHA_DESC"
+			validate="captcha"
+		/>
+	</fieldset>
+</form>

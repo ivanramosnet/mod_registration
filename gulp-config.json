@@ -1,0 +1,9 @@
+{
+	"wwwDir"           : "/var/www/vendor/joomla/joomla-cms",
+	"browserSyncProxy" : "registration.dev",
+	"extensions"       : {
+		"modules"    : {
+            "frontend"       : ["registration"]
+        }
+	}
+}
