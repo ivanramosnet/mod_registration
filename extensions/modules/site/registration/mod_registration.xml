@@ -20,5 +20,7 @@
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.mod_registration.ini</language>
 		<language tag="en-GB">en-GB/en-GB.mod_registration.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_registration.ini</language>
+		<language tag="es-ES">es-ES/es-ES.mod_registration.sys.ini</language>
 	</languages>
 </extension>
